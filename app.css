@@ -1,0 +1,107 @@
+/*box-sizing para que el padding y borde no influyan en el ancho total de los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo general del cuerpo de la página */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilo del contenedor principal */
+  .container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    border-radius: 8px;
+  }
+  
+  /* Título de la aplicación */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo del contenedor del input */
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo del input para ingresar tareas */
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Estilo del botón para agregar tareas */
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Cambio de color del botón cuando el mouse está sobre él */
+  button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Estilo de la lista que contiene las tareas */
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Estilo de cada tarea */
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para tareas completadas (tachado y cambio de color) */
+  li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  /* Estilo de los botones de cada tarea (completar, editar, eliminar) */
+  .task-buttons button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  
+  /* Estilo especial para el botón de editar */
+  .task-buttons button.edit-btn {
+    background-color: #0275d8;
+  }
+  
+  /* Efecto hover en los botones de la lista de tareas */
+  .task-buttons button:hover {
+    opacity: 0.8;
+  }
+  
